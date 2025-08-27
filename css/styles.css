@@ -116,18 +116,24 @@ h3 {
 /* HOME
 ------------------------------------*/
 .home {
-    background: url(../images/1-resting-feets-h2-full-4028x2253.jpg) no-repeat;
+    background: -webkit-image-set( url(../images/1-resting-feets-h2-full-1611x812.jpg) 1x, url(../images/1-resting-feets-h2-full-2014x1016.jpg) 2x, url(../images/1-resting-feets-h2-full-4028x2253.jpg) 3x) no-repeat;
     background-size: cover;
-    height: 100vh;
+    -webkit: cover;
+    -moz: cover;
+    -o: cover;
+    background-color: rgb(4, 66, 66);
+    background-position: center;
     display: flex;
     flex-direction: column;
-    color: white;
+    color: rgb(255, 255, 255);
+    height: 100vh;
+    min-height: 100vh;
 }
 .home .content-wrapper {
     flex: 1 0 auto;
 }
 .content-bg {
-    background: rgb(255 255 255 / 0.2);
+    background: rgba(0, 0, 0, 0.2);
     padding: 10px;
 }
 @media screen and (max-width:650px){
