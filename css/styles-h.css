@@ -1,0 +1,259 @@
+/*
+COLOR PALETTE - define new and add
+Base Blue (background dark blue)    #4c677f rgb(76,103,127)
+Midnight Blue                       #222f38 rgb(34,47,56)
+Link Water (background light blue)  #daecf7 rgb(218,236,247)
+Serenity                            #9bbbe3 rgb(155,187,227)
+Tuna   (black-blue)                 #3c3e41 rgb(60,62,65)
+Cello  (black-alt)                  #264164 rgb(60,62,65)
+White   (off white)                 #f9faf7 rgb(249,250,247)
+*/
+
+/* Top transparent menue starts here */
+* {
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+nav{
+    width: 100%;
+    height: 100%;
+    background: rgba(76,103,127, 0.8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 100px;
+}
+nav h1{
+    font-size: 40px;
+    color: #fff;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0px 5px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+nav ul li a:hover{
+    background: rgba(60,62,65, 0.8)
+}
+nav ul li .active{
+    background: rgba(60,62,65, 0.8)
+}
+/*Top transparent menue ENDS here */
+
+/* GLOBAL STYLES 
+------------------------------------*/
+/* 
+  https://www.paulirish.com/2012/box-sizing-border-box-ftw/
+*/
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* set default to 10px */
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html, body {
+    height: 100%;
+}
+body {
+    background: #e7f6fe; 
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.8rem;
+    line-height: 1.4;
+}
+h1, h2, h3 {
+    font-family: 'Caveat', cursive;
+    font-weight: 400;
+}
+h1 {
+    text-decoration: underline;
+    font-size: 8rem;
+    line-height: 0.85;
+}
+h2 {
+    font-size: 3.0rem;
+    margin-top: 35px;
+    margin-bottom: 65px;
+}
+h3 {
+    font-size: 2.6rem;
+}
+/* collor workds on text*/
+.color-word {
+    color: #f1ee25;
+}
+/* transparent top menu \ logo Expediciones Angostora */
+.logo-ea img {
+    position: absolute;
+    top: 2px;
+    left: 25px;
+    margin-top: 2px;
+    width:140px;
+    padding: 10px;
+}
+.logo-ea img:hover {
+    transform: scale(120%);
+}
+@media screen and (max-width: 800px){
+    .logo-ea img {
+        width: 80px;
+        padding: 5px;
+    }
+}
+.content-wrapper {
+    margin: auto;
+    padding: 0px 20px;
+    max-width: 1400px;
+}
+
+/* HOME
+------------------------------------ work for responsive background 
+1-resting-feets-h2-full-4028x2253.jpg*/
+
+.responsive-background {
+    background: url(../images/1-resting-feets-h2-full-4028x2253.jpg) no-repeat;
+    background-size: cover;
+    -webkit: cover;
+    -moz: cover;
+    -o: cover;
+    background-color: rgb(60,62,65);
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    height: 100vh;
+    min-height: 100vh;
+}
+
+
+@media screen and (max-width:600px){
+    .responsive-background {
+        background: url(../images/1-resting-feets-4phone-h2.jpg);
+        background-size: cover;
+        -webkit: cover;
+        -moz: cover;
+        -o: cover;
+        background-color: rgb(60,62,65);
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        color: rgb(255, 255, 255);
+        height: 100vh;
+        min-height: 100vh;
+        }
+    }
+@media screen and (max-width:1200px){
+    .responsive-background {
+    h1 {
+        text-decoration: underline;
+        font-size: 2.5rem;
+        line-height: 0.75;
+        }
+    h2 {
+    margin-top: 25px;
+    margin-bottom: 45px;
+    }
+    a {
+        padding: 4px 10px;
+    }
+    }
+}
+@media screen and (max-width:600px){
+    .responsive-background {
+    h1 {
+        text-decoration: underline;
+        font-size: 2.5rem;
+        line-height: 0.65;
+        }
+    h2 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    }
+    a {
+        padding: 4px 10px;
+    }
+    }
+}
+
+.home .content-wrapper {
+    flex: 1 0 auto;
+}
+.content-bg {
+    background: rgba(0, 0, 0, 0.1);
+    padding: 5px 50px;
+}
+@media screen and (max-width:650px){
+    .home .content-wrapper {
+        padding: 10px;
+    }
+    .content-bg {
+        padding: 10px;
+    }
+}
+@media screen and (max-width:550px){
+    .home .content-wrapper {
+        padding: 10px;
+    }
+    .content-bg {
+        background: rgba(0, 0, 0, 0.3);
+        padding: 10px;
+    }
+}
+
+
+/*  deleted pass on to each page styles.css
+
+
+/* FOOTER all pages 
+------------------------------------*/
+footer {
+    background: rgba(60,62,65, 0.8);
+    color: #e3edee;
+}
+a {
+    color: #e3edee;
+    text-decoration: underline;
+}
+a:hover {
+    color: #f1ee25;
+    text-decoration: none;
+    /*background: rgba(119, 137, 149, 0.8)*/
+}
+.socials {
+    list-style-type: none;
+    padding: 0;
+}
+.socials li {
+    display: inline-block;
+    margin-left: 10px;
+}
+.socials img {
+    width: 32px;
+}
+.socials img:hover {
+    transform: scale(140%);
+}
+
+@media screen and (min-width: 860px){
+    footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+}
+@media screen and (max-width: 859px){
+    footer {
+        text-align: center;
+        padding: 10px;
+    }
+}
