@@ -116,15 +116,26 @@ h3 {
 
 
 /*  Contact us  
-background -center- has been removed to allow sebas to stay on small screens
+background -center- has been removed to allow sebas to stay on small screens , test background-size cover vs contain
 ------------------------------------*/
 .contactanos-class header::before {
-    background: url(../images/oconnor-cumbre-Sebas-h2.jpg);
+    background: url(../images/2-oconnor-c-sebas-h2.jpg) no-repeat;
     background-size: cover;
     content: "";
     display: block;
-    height: 475px;
+    height: 450px;
 }
+
+@media screen and (max-width:1000px){
+    .contactanos-class header::before {
+    background: url(../images/2-oconnor-c-sebas-phone.jpg) no-repeat;
+    background-size: cover;
+    content: "";
+    display: block;
+    height: 400px;
+    }
+}
+
 .catalogo-section {
     margin-bottom: 50px;
 }

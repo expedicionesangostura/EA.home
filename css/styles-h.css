@@ -8,10 +8,11 @@ Tuna   (black-blue)                 #3c3e41 rgb(60,62,65)
 Cello  (black-alt)                  #264164 rgb(60,62,65)
 White   (off white)                 #f9faf7 rgb(249,250,247)
 */
-
+/*  Contact us  -- 2 styles-h for new home
 /* Top transparent menue starts here */
 * {
     padding: 0px;
+    border: 0px;
     box-sizing: border-box;
     font-family: sans-serif;
 }
@@ -76,14 +77,11 @@ h1, h2, h3 {
     font-weight: 400;
 }
 h1 {
-    text-decoration: underline;
     font-size: 8rem;
     line-height: 0.85;
 }
 h2 {
     font-size: 3.0rem;
-    margin-top: 35px;
-    margin-bottom: 65px;
 }
 h3 {
     font-size: 2.6rem;
@@ -116,103 +114,125 @@ h3 {
     max-width: 1400px;
 }
 
-/* HOME
------------------------------------- work for responsive background 
-1-resting-feets-h2-full-4028x2253.jpg*/
 
-.responsive-background {
-    background: url(../images/1-resting-feets-h2-full-4028x2253.jpg) no-repeat;
+/*  Contact us  
+background -center- has been removed to allow sebas to stay on small screens - test background-size cover / contain 
+------------------------------------*/
+.home-class header::before {
+    background: url(../images/2-resting-feet-cut-large1200x472.jpg) no-repeat;
     background-size: cover;
-    -webkit: cover;
-    -moz: cover;
-    -o: cover;
-    background-color: rgb(60,62,65);
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    color: rgb(255, 255, 255);
-    height: 100vh;
-    min-height: 100vh;
+    content: "";
+    display: block;
+    height: 650px;
 }
-
-
-@media screen and (max-width:600px){
-    .responsive-background {
-        background: url(../images/1-resting-feets-4phone-h2.jpg);
-        background-size: cover;
-        -webkit: cover;
-        -moz: cover;
-        -o: cover;
-        background-color: rgb(60,62,65);
-        background-position: center;
-        display: flex;
-        flex-direction: column;
-        color: rgb(255, 255, 255);
-        height: 100vh;
-        min-height: 100vh;
-        }
+.title-class h1 {
+        font-size: 6rem;
+        position: absolute;
+        text-align: center;
+        top: 30%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+        margin: 0;
+        color: #fff;
     }
+
 @media screen and (max-width:1200px){
-    .responsive-background {
-    h1 {
-        text-decoration: underline;
-        font-size: 2.5rem;
-        line-height: 0.75;
-        }
-    h2 {
-    margin-top: 25px;
-    margin-bottom: 45px;
+    .home-class header::before {
+    background: url(../images/2-large-rest-feet-hc-horz-1800x911.jpg) no-repeat;
+    background-size: cover;
+    content: "";
+    display: block;
+    height: 675px;
     }
-    a {
-        padding: 4px 10px;
-    }
-    }
-}
-@media screen and (max-width:600px){
-    .responsive-background {
-    h1 {
-        text-decoration: underline;
-        font-size: 2.5rem;
-        line-height: 0.65;
-        }
-    h2 {
-    margin-top: 0px;
-    margin-bottom: 10px;
-    }
-    a {
-        padding: 4px 10px;
-    }
+    .title-class h1 {
+        font-size: 6rem;
+        line-height: 0.85;
+        position: absolute;
+        text-align: center;
+        top: 40%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+        margin: 0;
+        color: #fff;
     }
 }
 
-.home .content-wrapper {
-    flex: 1 0 auto;
+@media screen and (max-width:1000px){
+    .home-class header::before {
+    background: url(../images/1-large-rest-feet-hc-1000.jpg) no-repeat;
+    background-size: cover;
+    content: "";
+    display: block;
+    height: 675px;
+    }
+    .title-class h1 {
+    font-size: 4rem;
+    line-height: 0.85;
+    position: absolute;
+    text-align: center;
+    top: 30%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    color: #fff;
+    }
 }
-.content-bg {
-    background: rgba(0, 0, 0, 0.1);
-    padding: 5px 50px;
-}
+       
 @media screen and (max-width:650px){
-    .home .content-wrapper {
-        padding: 10px;
+    .home-class header::before {
+    background: url(../images/1-large-rest-feet-hc-1000.jpg) no-repeat;
+    background-size: cover;
+    content: "";
+    display: block;
+    height: 675px;
     }
-    .content-bg {
-        padding: 10px;
+    .title-class h1 {
+    font-size: 3rem;
+    line-height: 0.85;
+    position: absolute;
+    text-align: center;
+    top: 35%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    color: #fff;
     }
 }
-@media screen and (max-width:550px){
-    .home .content-wrapper {
-        padding: 10px;
-    }
-    .content-bg {
-        background: rgba(0, 0, 0, 0.3);
-        padding: 10px;
-    }
+
+.catalogo-section {
+    margin-bottom: 50px;
 }
-
-
-/*  deleted pass on to each page styles.css
-
+.catalogo-section h2 {
+    border-bottom: 2px dashed #d3d4d6;
+}
+.download-link {
+    position: absolute;
+    top: 605px;
+    left: 5px;
+    font-size: 1.5rem;
+}
+.social-contacts {
+    list-style-type: none;
+    padding: 0px;
+}
+.social-contacts p {
+    color: rgb(0, 0, 0);
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-right: 30px;
+}
+.social-contacts li {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-left: 10px;
+}
+.social-contacts img {
+    width: 64px;
+}
+.social-contacts img:hover {
+    transform: scale(140%);
+}
 
 /* FOOTER all pages 
 ------------------------------------*/

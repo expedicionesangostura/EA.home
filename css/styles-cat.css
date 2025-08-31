@@ -117,7 +117,7 @@ h3 {
 /*  Catalogo de sendas 
 ------------------------------------*/
 .catalogo-class header::before {
-    background: url(../images/belvedere-family-1.png) center;
+    background: url(../images/2-belvedere-flia-1.png) center;
     background-size: cover;
     content: "";
     display: block;
