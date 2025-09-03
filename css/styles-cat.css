@@ -1,52 +1,141 @@
 /*
 COLOR PALETTE - define new and add
-Base Blue (background dark blue)    #4c677f rgb(76,103,127)
-Midnight Blue                       #222f38 rgb(34,47,56)
-Link Water (background light blue)  #daecf7 rgb(218,236,247)
-Serenity                            #9bbbe3 rgb(155,187,227)
-Tuna   (black-blue)                 #3c3e41 rgb(60,62,65)
-Cello  (black-alt)                  #264164 rgb(60,62,65)
-White   (off white)                 #f9faf7 rgb(249,250,247)
 */
 
-/* Top transparent menue starts here */
-* {
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: sans-serif;
+/* N E W Top interactive MENU starts here */
+body {
+    font-family: "Inter", sans-serif;
+    height: 5000px;
+    padding-top: 60px;
+    background-color: #e8f0f7;
 }
-nav{
+
+.header-top-menu {
+    background-color: rgb(19, 22, 26);
+    position: fixed;
     width: 100%;
-    height: 100%;
-    background: rgba(76,103,127, 0.8);
+    top: 0;
+    left: 0;
+}
+
+.header-top-content {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 0px 100px;
+    justify-content: space-between;
+    padding: 0 30px;
+    min-height: 60px;
 }
-nav h1{
-    font-size: 40px;
-    color: #fff;
-}
-nav ul li{
-    display: inline-block;
-    list-style: none;
-    margin: 0px 5px;
-}
-nav ul li a{
+.header-top-content a{
     text-decoration: none;
-    color: #fff;
-    font-size: 20px;
-    padding: 8px 15px;
-    border-radius: 5px;
 }
-nav ul li a:hover{
-    background: rgba(60,62,65, 0.8)
+.a-logo {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.9)
 }
-nav ul li .active{
-    background: rgba(60,62,65, 0.8)
+
+.header-top-content ul {
+    list-style: none;
 }
-/*Top transparent menue ENDS here */
+.a-logo img{
+    position: absolute;
+    top: 2px;
+    left: 25px;
+    margin-top: 2px;
+    width: 180px;
+    padding: 10px;
+    transition: all 0.4s;
+}
+.header-top-content img:hover {
+    transform: scale(120%);
+}
+/* nav class for the nav menue */
+nav-class {
+    transition: all 0.3s ease-in-out;
+}
+/* nav_list for the unorder list ul */
+.nav_list {
+    display: flex;
+    column-gap: 40px;
+}
+/* nav_item for each item il , within the nav , not needed
+.nav_item {
+}*/
+/* nav_link for the a anchos links within the nav */
+.nav_link {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 16px;
+    transition: all 0.4s;
+}
+.nav_link:hover,
+.nav_link:focus {
+    color: rgba(255, 255, 255, 1);
+}
+/* then we have the div - hamburger holding 3 div bar */
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+/* finaly the bar divs within the hamburger */
+.bar {
+    height: 2px;
+    width: 27px;
+    background-color: #fff;
+    margin: 5px 0;
+    opacity: 0.8;
+    transition: all 0.3s ease-in-out;
+}
+/*add a class to work with script.js - .nav--open 
+This will cancel the earlier move and set it back */
+.nav--open {
+    transform: translate(0) !important;
+}
+.hamburger--open .bar:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+.hamburger--open .bar:nth-child(2) {
+    opacity: 0;
+}
+.hamburger--open .bar:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+/* Start all setting to move on to a hamburger menu at -650 */
+@media (max-width: 650px) {
+    .nav-class {
+        position: fixed;
+        top: 60px;
+        left: 25%;
+        background-color: rgb(19, 22, 26);
+        width: 50%;
+        padding: 10px 0 25px;
+        transform: translateX(-150%)
+    }
+
+    .a-logo img{
+    position: absolute;
+    top: 2px;
+    left: 25px;
+    margin-top: 2px;
+    width: 80px;
+    padding: 10px;
+    transition: all 0.4s;
+    }
+
+    .nav_list {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    }
+
+    .nav_link {
+    font-size: 14px;
+    }
+
+    .hamburger {
+    display: block;
+    }
+}
+/* -------- Styles for TOP menue E N D   here ----- */
 
 /* GLOBAL STYLES 
 ------------------------------------*/
@@ -67,8 +156,8 @@ html, body {
 body {
     background: #e7f6fe; 
     margin: 0;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.8rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.4rem;
     line-height: 1.4;
 }
 h1, h2, h3 {
@@ -90,39 +179,36 @@ h3 {
 .color-word {
     color: #f1ee25;
 }
-/* transparent top menu \ logo Expediciones Angostora */
-.logo-ea img {
-    position: absolute;
-    top: 2px;
-    left: 25px;
-    margin-top: 2px;
-    width:140px;
-    padding: 10px;
-}
-.logo-ea img:hover {
-    transform: scale(120%);
-}
+
 @media screen and (max-width: 800px){
     .logo-ea img {
         width: 80px;
         padding: 5px;
     }
 }
+
 .content-wrapper {
-    margin: auto;
-    padding: 0px 20px;
+    display: flexbox;
+    align-items: center;
+    margin: 10px;
+    padding: 20px;
     max-width: 1400px;
 }
 
-/*  Catalogo de sendas 
+/*  Catalogo de sendas - catalog-class 
 ------------------------------------*/
 .catalogo-class header::before {
-    background: url(../images/2-belvedere-flia-1.png) center;
+    background: url(../images/2-belvedere-flia-1.png) center, no-repeat;
     background-size: cover;
     content: "";
     display: block;
-    height: 375px;
+    height: 380px;
 }
+.slogan-catalogo {
+    padding-top: 15px;
+    padding-left: 30px;
+}
+
 .catalogo-section {
     margin-bottom: 10px;
 }
@@ -131,7 +217,7 @@ h3 {
 }
 .btn-d-link-cat {
     position: absolute;
-    top: 505px;
+    top: 445px;
     left: 5px;
     font-size: 1.5rem;
     background: #3c8453;
@@ -145,14 +231,9 @@ h3 {
     line-height: 1;
     border-radius: 4px;
 }
-/* sdjust position for large screens more than 1100 */
-@media screen and (min-width: 1100px){
-    .btn-d-link-cat {
-        top: 470px;
-    }
-}
 
-/* Shared class with SP */
+
+/* Shared class with SP , set to define video screen width */
 .youtube-container {
     aspect-ratio: 16 / 9;
     width: 850px;
@@ -177,34 +258,55 @@ h3 {
     float: right;
     width: 400px;
 }
-
+/* Adaptive options for youtube-container -*/
 @media screen and (max-width: 950px){
     .youtube-container {
         aspect-ratio: 16 / 9;
-        width: 800px;
+        width: 700px;
         padding: 10px;
     }
 }
 @media screen and (max-width: 830px){
     .youtube-container {
         aspect-ratio: 16 / 9;
-        width: 600px;
+        width: 500px;
         padding: 5px;
+    }
+        .content-wrapper p {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .youtube-container {
+        aspect-ratio: 16 / 9;
+        width: 400px;
+        padding: 5px;
+    }
+        .content-wrapper p {
+        font-size: 1.2rem;
     }
 }
 @media screen and (max-width: 500px){
     .youtube-container {
         aspect-ratio: 16 / 9;
-        width: 450px;
+        width: 330px;
         padding: 2px;
     }
+    .content-wrapper img {
+        width: 200px;
+    }
+
 }
 
-@media screen and (max-width: 350px){
+@media screen and (max-width: 400px){
     .youtube-container {
         aspect-ratio: 16 / 9;
-        width: 300px;
+        width: 280px;
         padding: 0px;
+    }
+        .content-wrapper p {
+        font-size: 1rem;
     }
 }
 

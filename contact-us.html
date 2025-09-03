@@ -3,40 +3,55 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Expediciones Angostura | Contactanos</title>
+    <title>Expediciones Angostura | Contact-us</title>
+    <!-- Adding fonts , Caveat for Expediciones Angostura Style and Inter for menu and text-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <!-- Changing fonts with comments -->
-    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles-c.css">
+    <script src="scripts/script.js" defer></script>
   </head>
+ <!-- Head for 4 Index, Salidas-Programadas, catalogo and contact-us (exept Title & styles)---------------------------------------------------------------->
   <body class="contactanos-class">
-    <!-- Top transparent menue starts here -->
-    <!-- Set correct active on each li when copying the menu to all other -->
-    <section class="transp-menu">
-      <nav>
-        <div class="logo-ea">
-					<a href="index.html">
-					<img src="images/1logo-ea-final-white.png" target="_blank">
-          </a>
-		    </div>
-        <h1>Expediciones Angostura</h1>
-        <ul>
-          <li> <a href="index.html">Home</a></li>
-          <li> <a href="salidas-programadas.html">Salidas&nbsp;Programadas</a></li>
-          <li> <a href="catalogo.html">Catalogo</a></li>
-          <li> <a href="contact-us.html" class="active">Contactanos</a></li>
-        </ul>
-      </nav>
-   </section>
-    <!-- Top transparent menue ENDS here -->
+      <!-- Interactive Menue STARTS here -->
+    <header>
+      <section class="header-top-menu">
+        <div class="header-top-content">
+          <a class="a-logo" href="index.html"><img src="images/1logo-ea-final-white.png" target="blank"></a>
+          <!-- Place for EA text at top menu TO ADD and TEST, Pending -->
+          <nav class="nav-class">
+            <ul class="nav_list">
+              <li class="nav_item">
+                <a href="index.html" class="nav_link">Home</a>
+              </li>
+              <li class="nav_item">
+                <a href="salidas-programadas.html" class="nav_link">Salidas&nbsp;Programadas</a>
+              </li>
+                <li class="nav_item">
+                <a href="catalogo.html" class="nav_link">Catalogo</a>
+              </li>
+                <li class="nav_item">
+                <a href="contact-us.html" class="nav_link">Contactanos</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <!-- Interactive Menue E N D here --------------------------------------->
+
   
     <!-- No Download needed for Contactg us page  -->
-    <header>
-      <div class="content-wrapper">
+    <section class="slogan-contactus">
+      <div>
         <h3>Contactanos para una salida a tu medida, reserva y viví la montaña</h3>
       </div>
-    </header>
+    </section>
     <main class="content-wrapper">
       <!-- //  Contact us   // -->
         <ul class="social-contacts">

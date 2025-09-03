@@ -1,53 +1,144 @@
 /*
 COLOR PALETTE - define new and add
-Base Blue (background dark blue)    #4c677f rgb(76,103,127)
-Midnight Blue                       #222f38 rgb(34,47,56)
-Link Water (background light blue)  #daecf7 rgb(218,236,247)
-Serenity                            #9bbbe3 rgb(155,187,227)
-Tuna   (black-blue)                 #3c3e41 rgb(60,62,65)
-Cello  (black-alt)                  #264164 rgb(60,62,65)
-White   (off white)                 #f9faf7 rgb(249,250,247)
 */
-/*  Contact us  -- 2 styles-h for new home
-/* Top transparent menue starts here */
-* {
-    padding: 0px;
-    border: 0px;
-    box-sizing: border-box;
-    font-family: sans-serif;
+
+/* N E W Top interactive MENU starts here */
+body {
+    font-family: "Inter", sans-serif;
+    height: 5000px;
+    padding-top: 60px;
+    background-color: #e8f0f7;
 }
-nav{
+/*-- play with top menu colors - background-color: rgb(19, 22, 26) --*/
+.header-top-menu {
+    background-color: rgb(19, 22, 26);
+    position: fixed;
     width: 100%;
-    height: 100%;
-    background: rgba(76,103,127, 0.8);
+    top: 0;
+    left: 0;
+}
+
+
+.header-top-content {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 0px 100px;
+    justify-content: space-between;
+    padding: 0 30px;
+    min-height: 60px;
 }
-nav h1{
-    font-size: 40px;
-    color: #fff;
-}
-nav ul li{
-    display: inline-block;
-    list-style: none;
-    margin: 0px 5px;
-}
-nav ul li a{
+.header-top-content a{
     text-decoration: none;
-    color: #fff;
-    font-size: 20px;
-    padding: 8px 15px;
-    border-radius: 5px;
 }
-nav ul li a:hover{
-    background: rgba(60,62,65, 0.8)
+.a-logo {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.9)
 }
-nav ul li .active{
-    background: rgba(60,62,65, 0.8)
+
+.header-top-content ul {
+    list-style: none;
 }
-/*Top transparent menue ENDS here */
+.a-logo img{
+    position: absolute;
+    top: 2px;
+    left: 25px;
+    margin-top: 2px;
+    width: 180px;
+    padding: 10px;
+    transition: all 0.4s;
+}
+.header-top-content img:hover {
+    transform: scale(120%);
+}
+/* nav class for the nav menue */
+nav-class {
+    transition: all 0.3s ease-in-out;
+}
+/* nav_list for the unorder list ul */
+.nav_list {
+    display: flex;
+    column-gap: 40px;
+}
+/* nav_item for each item il , within the nav , not needed
+.nav_item {
+}*/
+/* nav_link for the a anchos links within the nav */
+.nav_link {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 16px;
+    transition: all 0.4s;
+}
+.nav_link:hover,
+.nav_link:focus {
+    color: rgb(255, 255, 255);
+}
+/* then we have the div - hamburger holding 3 div bar */
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+/* finaly the bar divs within the hamburger */
+.bar {
+    height: 2px;
+    width: 27px;
+    background-color: #fff;
+    margin: 5px 0;
+    opacity: 0.8;
+    transition: all 0.3s ease-in-out;
+}
+/*add a class to work with script.js - .nav--open 
+This will cancel the earlier move and set it back */
+.nav--open {
+    transform: translate(0) !important;
+}
+.hamburger--open .bar:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+.hamburger--open .bar:nth-child(2) {
+    opacity: 0;
+}
+.hamburger--open .bar:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+/* Start all setting to move on to a hamburger menu at -650 */
+@media (max-width: 650px) {
+    .nav-class {
+        position: fixed;
+        top: 60px;
+        left: 25%;
+        background-color: rgb(19, 22, 26);
+        width: 50%;
+        padding: 10px 0 25px;
+        transform: translateX(-150%)
+    }
+
+    .a-logo img{
+    position: absolute;
+    top: 2px;
+    left: 25px;
+    margin-top: 2px;
+    width: 80px;
+    padding: 10px;
+    transition: all 0.4s;
+    }
+
+    .nav_list {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    }
+
+    .nav_link {
+    font-size: 14px;
+    }
+
+    .hamburger {
+    display: block;
+    }
+}
+/* -------- Styles for TOP menue E N D   here ----- */
+
+/* N E W Top interactive MENU ENDs here -----------------------------*/
 
 /* GLOBAL STYLES 
 ------------------------------------*/
@@ -68,8 +159,8 @@ html, body {
 body {
     background: #e7f6fe; 
     margin: 0;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.8rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.4rem;
     line-height: 1.4;
 }
 h1, h2, h3 {
@@ -98,6 +189,7 @@ h3 {
     margin-top: 2px;
     width:140px;
     padding: 10px;
+    transition: all 0.4s;
 }
 .logo-ea img:hover {
     transform: scale(120%);
@@ -115,22 +207,21 @@ h3 {
 }
 
 
-/*  Contact us  
-background -center- has been removed to allow sebas to stay on small screens - test background-size cover / contain 
+/*  New Home Styles settings start here ----------------------------------------- 
 ------------------------------------*/
 .home-class header::before {
-    background: url(../images/2-resting-feet-cut-large1200x472.jpg) no-repeat;
+    background: url(../images/1-resting-feets-h4-full-1600x550.jpg) no-repeat;
     background-size: cover;
     content: "";
     display: block;
-    height: 650px;
+    height: 550px;
 }
 .title-class h1 {
         font-size: 6rem;
         position: absolute;
         text-align: center;
         top: 30%;
-        left: 40%;
+        left: 50%;
         transform: translate(-50%, -50%);
         margin: 0;
         color: #fff;
@@ -138,101 +229,50 @@ background -center- has been removed to allow sebas to stay on small screens - t
 
 @media screen and (max-width:1200px){
     .home-class header::before {
-    background: url(../images/2-large-rest-feet-hc-horz-1800x911.jpg) no-repeat;
+    background: url(../images/1-resting-feets-h4-full-1600x550.jpg) no-repeat;
     background-size: cover;
     content: "";
     display: block;
-    height: 675px;
+    height: 375px;
     }
     .title-class h1 {
-        font-size: 6rem;
+        font-size: 4rem;
         line-height: 0.85;
         position: absolute;
         text-align: center;
-        top: 40%;
-        left: 40%;
+        top: 20%;
+        left: 55%;
         transform: translate(-50%, -50%);
         margin: 0;
         color: #fff;
     }
 }
 
-@media screen and (max-width:1000px){
+@media screen and (max-width:500px){
     .home-class header::before {
     background: url(../images/1-large-rest-feet-hc-1000.jpg) no-repeat;
     background-size: cover;
     content: "";
     display: block;
-    height: 675px;
-    }
-    .title-class h1 {
-    font-size: 4rem;
-    line-height: 0.85;
-    position: absolute;
-    text-align: center;
-    top: 30%;
-    left: 40%;
-    transform: translate(-50%, -50%);
-    margin: 0;
-    color: #fff;
-    }
-}
-       
-@media screen and (max-width:650px){
-    .home-class header::before {
-    background: url(../images/1-large-rest-feet-hc-1000.jpg) no-repeat;
-    background-size: cover;
-    content: "";
-    display: block;
-    height: 675px;
+    height: 320px;
     }
     .title-class h1 {
     font-size: 3rem;
     line-height: 0.85;
     position: absolute;
-    text-align: center;
-    top: 35%;
+    top: 15%;
     left: 40%;
     transform: translate(-50%, -50%);
     margin: 0;
-    color: #fff;
+    color: #0a0a0a;
     }
 }
+.content-wrapper-home {
+    text-align: left;
+    margin: 10px;
+    padding: 20px;
+}
 
-.catalogo-section {
-    margin-bottom: 50px;
-}
-.catalogo-section h2 {
-    border-bottom: 2px dashed #d3d4d6;
-}
-.download-link {
-    position: absolute;
-    top: 605px;
-    left: 5px;
-    font-size: 1.5rem;
-}
-.social-contacts {
-    list-style-type: none;
-    padding: 0px;
-}
-.social-contacts p {
-    color: rgb(0, 0, 0);
-    padding-left: 10px;
-    padding-bottom: 10px;
-    padding-right: 30px;
-}
-.social-contacts li {
-    display: inline-flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-left: 10px;
-}
-.social-contacts img {
-    width: 64px;
-}
-.social-contacts img:hover {
-    transform: scale(140%);
-}
 
 /* FOOTER all pages 
 ------------------------------------*/
@@ -243,6 +283,7 @@ footer {
 a {
     color: #e3edee;
     text-decoration: underline;
+    transition: all 0.4s;
 }
 a:hover {
     color: #f1ee25;
