@@ -123,6 +123,7 @@ This will cancel the earlier move and set it back */
 
     .nav_list {
     flex-direction: column;
+    padding: 0%;
     align-items: center;
     row-gap: 20px;
     }

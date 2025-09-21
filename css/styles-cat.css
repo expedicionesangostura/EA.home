@@ -124,6 +124,7 @@ This will cancel the earlier move and set it back */
     .nav_list {
     flex-direction: column;
     align-items: center;
+    padding: 0%;
     row-gap: 20px;
     }
 
