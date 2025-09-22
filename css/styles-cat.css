@@ -100,7 +100,7 @@ This will cancel the earlier move and set it back */
     transform: translateY(-7px) rotate(-45deg);
 }
 /* Start all setting to move on to a hamburger menu at -650 */
-@media (max-width: 650px) {
+@media (max-width: 1050px) {
     .nav-class {
         position: fixed;
         top: 60px;
@@ -175,6 +175,13 @@ h2 {
 }
 h3 {
     font-size: 2.6rem;
+}
+h4 {
+    color: #f1ee25;
+    font-family: 'Caveat', cursive;
+    font-size: 2.6rem;
+    margin-top: 0%;
+    margin-bottom: 0%;
 }
 /* collor workds on text*/
 .color-word {
