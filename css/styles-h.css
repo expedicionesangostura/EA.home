@@ -66,7 +66,7 @@ nav-class {
 /* nav_link for the a anchos links within the nav */
 .nav_link {
     color: rgba(255, 255, 255, 0.75);
-    font-size: 16px;
+    font-size: 18px;
     transition: all 0.4s;
 }
 .nav_link:hover,
@@ -265,7 +265,7 @@ h3 {
     text-align: left;
     margin: 10px;
     padding: 20px;
-    font-size: 1.8rem;
+    font-size: 2.0rem;
     a {
         color:#0a0a0a;
         font-weight: bold;
