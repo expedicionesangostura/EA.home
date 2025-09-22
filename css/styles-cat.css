@@ -68,7 +68,7 @@ nav-class {
 }
 .nav_link:hover,
 .nav_link:focus {
-    color: rgba(255, 255, 255, 1);
+    color: rgba(252, 255, 60);
 }
 /* then we have the div - hamburger holding 3 div bar */
 .hamburger {

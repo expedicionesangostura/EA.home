@@ -71,7 +71,7 @@ nav-class {
 }
 .nav_link:hover,
 .nav_link:focus {
-    color: rgb(255, 255, 255);
+    color: rgb(252, 255, 60);
 }
 /* then we have the div - hamburger holding 3 div bar */
 .hamburger {
@@ -224,7 +224,7 @@ h4 {
     background-size: cover;
     content: "";
     display: block;
-    height: 450px;
+    height: 550px;
 }
 .title-class h1 {
         font-size: 6rem;
