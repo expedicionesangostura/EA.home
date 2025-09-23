@@ -158,7 +158,7 @@ body {
     background: #e7f6fe; 
     margin: 0;
     font-family: 'Inter', sans-serif;
-    font-size: 2.0rem;
+    font-size: 1.4rem;
     line-height: 1.4;
 }
 h1, h2, h3 {
@@ -271,7 +271,8 @@ h4 {
 /* FOOTER all pages 
 ------------------------------------*/
 footer {
-    background: rgba(60,62,65, 0.8);
+    background-color: rgb(19, 22, 26);
+    height: 150px;
     color: #e3edee;
 }
 a {
