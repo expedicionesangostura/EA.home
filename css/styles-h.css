@@ -8,7 +8,7 @@ body {
     height: 100%;
     padding-top: 60px;
     background-color: #e8f0f7;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     line-height: 1.4;
 }
 /*-- play with top menu colors - background-color: rgb(19, 22, 26) --*/
@@ -67,7 +67,7 @@ nav-class {
 /* nav_link for the a anchos links within the nav */
 .nav_link {
     color:#0a0a0a;
-    font-size: 20px;
+    font-size: 16px;
     transition: all 0.4s;
 }
 .nav_link:hover,
@@ -156,13 +156,7 @@ html {
 html, body {
     height: 100%;
 }
-body {
-    background: #e7f6fe; 
-    margin: 0;
-    font-family: 'Inter', sans-serif;
-    font-size: 1.4rem;
-    line-height: 1.4;
-}
+
 
 h1, h2, h3 {
     font-family: 'Caveat', cursive;
@@ -279,6 +273,8 @@ h4 {
     font-size: 2.0rem;
     a {
         color:#0a0a0a;
+        text-decoration: underline;
+        font-size: 2rem;
         font-weight: bold;
     }
     a:hover {
