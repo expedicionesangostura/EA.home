@@ -26,6 +26,7 @@ body {
     min-height: 60px;
 }
 .header-top-content a{
+    color: rgb(230, 230, 230);
     text-decoration: none;
 }
 .a-logo {
@@ -276,8 +277,9 @@ footer {
     color: #e3edee;
 }
 a {
-    color: #e3edee;
-    text-decoration: underline;
+    color: #f1ee25;
+    text-decoration: none;
+    transition: all 0.4s;
 }
 a:hover {
     color: #f1ee25;

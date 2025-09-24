@@ -29,6 +29,7 @@ body {
     min-height: 60px;
 }
 .header-top-content a{
+    color: rgb(230, 230, 230);
     text-decoration: none;
 }
 .a-logo {
@@ -65,7 +66,7 @@ nav-class {
 }*/
 /* nav_link for the a anchos links within the nav */
 .nav_link {
-    color: rgba(0, 0, 0,);
+    color:#0a0a0a
     font-size: 20px;
     transition: all 0.4s;
 }
@@ -184,11 +185,8 @@ h4 {
     margin-top: 0%;
     margin-bottom: 0%;
 }
-/* collor workds on text*/
-.color-word {
-    color: #f1ee25;
-}
-/* transparent top menu \ logo Expediciones Angostora */
+
+/* Adaptive top menu \ logo Expediciones Angostora */
 .logo-ea img {
     position: absolute;
     top: 2px;
@@ -298,8 +296,8 @@ footer {
     color: #e3edee;
 }
 a {
-    color: #e3edee;
-    text-decoration: underline;
+    color: #f1ee25;
+    text-decoration: none;
     transition: all 0.4s;
 }
 a:hover {
