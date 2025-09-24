@@ -190,14 +190,23 @@ h4 {
     color: #f1ee25;
 }
 
+
+
 .content-wrapper {
-    display: contents;
+    display: flex;
     align-items: center;
     margin: 10px;
-    padding: 20px;
-    max-width: 1400px;
+    padding: 30px;
+}
+@media screen and (max-width:1250px){
+    .content-wrapper {
+        display: list-item; 
+     }
 }
 
+
+/*  Class set to style Calendar, not in use.
+.calendar-frame {}*/
 
 /*  Contact us background - Sebas O connor current placement 
 ------------------------------------*/
