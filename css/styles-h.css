@@ -65,7 +65,7 @@ nav-class {
 }*/
 /* nav_link for the a anchos links within the nav */
 .nav_link {
-    color: rgba(255, 255, 255, 0.75);
+    color: rgba(0, 0, 0,);
     font-size: 20px;
     transition: all 0.4s;
 }
