@@ -1,5 +1,6 @@
 /*
 COLOR PALETTE - define new and add
+match Bolt blue color #4f46e5
 */
 
 /* N E W Top interactive MENU starts here */
@@ -11,7 +12,7 @@ body {
 }
 
 .header-top-menu {
-    background-color: rgb(19, 22, 26);
+    background-color: #4f46e5;
     position: fixed;
     width: 100%;
     top: 0;
@@ -325,7 +326,7 @@ h4 {
 /* FOOTER all pages 
 ------------------------------------*/
 footer {
-    background-color: rgb(19, 22, 26);
+    background-color: #4f46e5;
     height: 150px;
     color: #e3edee;
 }
