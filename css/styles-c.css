@@ -323,10 +323,14 @@ a:hover {
         justify-content: space-between;
         padding: 0 20px;
     }
+
 }
 @media screen and (max-width: 859px){
     footer {
         text-align: center;
         padding: 10px;
+    }
+    .content-wrapper {
+        padding: 5px;
     }
 }
