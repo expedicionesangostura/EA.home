@@ -1,6 +1,10 @@
 /*
 COLOR PALETTE - define new and add
-match Bolt blue color #4f46e5
+match Bolt blue color background: linear-gradient(to right, #2563eb , #4f46e5);
+rgb(59 130 246 / .5)
+background from #e0e7ff to 
+bg-gradient-to-br from-blue-50 to-indigo-100
+background: linear-gradient(to right, #eff6ff , #e0e7ff);
 */
 
 /* N E W Top interactive MENU starts here */
@@ -8,14 +12,14 @@ body {
     font-family: "Inter", sans-serif;
     height: 100%;
     padding-top: 60px;
-    background-color: #e8f0f7;
+    background: linear-gradient(to right, #eff6ff , #e0e7ff);
     font-size: 1.8rem;
     line-height: 1.4;
     margin: 0%;
 }
 /*-- play with top menu colors - background-color: rgb(19, 22, 26) --*/
 .header-top-menu {
-    background-color: #4f46e5;
+    background: linear-gradient(to right, #2563eb , #4f46e5);
     position: fixed;
     width: 100%;
     top: 0;
@@ -309,7 +313,7 @@ h4 {
 /* FOOTER all pages 
 ------------------------------old color rgb(19, 22, 26)------*/
 footer {
-    background-color: #4f46e5;
+    background: linear-gradient(to right, #2563eb , #4f46e5);
     height: 150px;
     color: #e3edee;
 }

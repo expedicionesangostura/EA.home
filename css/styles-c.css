@@ -8,7 +8,7 @@ body {
     font-family: "Inter", sans-serif;
     height: 5000px;
     padding-top: 60px;
-    background-color: #e8f0f7;
+    background: linear-gradient(to right, #eff6ff , #e0e7ff);
 }
 
 .header-top-menu {
@@ -157,7 +157,7 @@ html, body {
     height: 100%;
 }
 body {
-    background: #e7f6fe; 
+    background: linear-gradient(to right, #eff6ff , #e0e7ff);
     margin: 0;
     font-family: 'Inter', sans-serif;
     font-size: 1.4rem;
