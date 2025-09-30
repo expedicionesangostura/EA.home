@@ -20,6 +20,8 @@ body {
 /*-- play with top menu colors - background-color: rgb(19, 22, 26) --*/
 .header-top-menu {
     background: linear-gradient(to right, #2563eb , #4f46e5);
+    font-weight: 800;
+    color: #fff;
     position: fixed;
     width: 100%;
     top: 0;
@@ -308,50 +310,70 @@ h4 {
 }
 
 
-
-
 /* FOOTER all pages 
-------------------------------old color rgb(19, 22, 26)------*/
+------------------------------------*/
 footer {
-    background: linear-gradient(to right, #2563eb , #4f46e5);
-    height: 150px;
-    color: #e3edee;
-}
-a {
-    color: #f1ee25;
-    text-decoration: none;
-    transition: all 0.4s;
-}
-a:hover {
-    color: #f1ee25;
-    text-decoration: none;
-    /*background: rgba(119, 137, 149, 0.8)*/
-}
-.socials {
-    list-style-type: none;
-    padding: 0;
-}
-.socials li {
-    display: inline-block;
-    margin-left: 10px;
-}
-.socials img {
-    width: 32px;
-}
-.socials img:hover {
-    transform: scale(140%);
+        background-color: #4f46e5;
+        font-size: 1.4rem;
+        height: 150px;
+        color: #e3edee;
+        a {
+        color: #f1ee25;
+        text-decoration: none;
+        transition: all 0.4s;
+        }
+        a  :hover {
+        color: #f1ee25;
+        text-decoration: none;
+        /*background: rgba(119, 137, 149, 0.8)*/
+        }
+        .socials {
+        list-style-type: none;
+        padding: 0;
+        }
+        .socials li {
+        display: inline-block;
+        margin-left: 10px;
+        }
+        .socials img {
+        width: 32px;
+        }
+        .socials img:hover {
+        transform: scale(140%);
+        }
+        .btn-bolt-app {
+        margin-top: 10px;
+        background-color: #f1ee25;
+        color: #2563eb;
+        font-weight: 800;
+        padding: 10px;
+        height: 40px;
+        border-color: darkblue;
+        border-radius: 5px;
+        border-top: 20px;
+        border-bottom: 20px;
+        text-decoration: underline;
+        letter-spacing: 0.1em;
+        }
+        .btn-bolt-app:hover {
+        transform: scale(140%);
+        }
 }
 
-@media screen and (min-width: 860px){
+
+
+@media screen and (min-width: 1000px){
     footer {
         display: flex;
         justify-content: space-between;
-        padding: 0 20px;
+        padding: 10 20px;
+
     }
 }
-@media screen and (max-width: 859px){
+@media screen and (max-width: 999px){
     footer {
         text-align: center;
         padding: 10px;
+        padding-bottom: 20px;
     }
 }
