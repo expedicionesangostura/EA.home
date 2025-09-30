@@ -290,7 +290,7 @@ h4 {
 /* FOOTER all pages 
 ------------------------------------*/
 footer {
-    background-color: #4f46e5;
+    background: linear-gradient(to right, #2563eb , #4f46e5);
     height: 150px;
     color: #e3edee;
     a {
