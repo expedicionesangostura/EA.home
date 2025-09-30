@@ -315,7 +315,7 @@ h4 {
 footer {
         background: linear-gradient(to right, #2563eb , #4f46e5);
         font-size: 1.4rem;
-        height: 150px;
+        height: 60px;
         color: #e3edee;
         a {
         color: #f1ee25;
@@ -329,7 +329,8 @@ footer {
         }
         .socials {
         list-style-type: none;
-        padding: 0;
+        padding-left: 20px;
+        padding-right: 20px;
         }
         .socials li {
         display: inline-block;
@@ -358,6 +359,9 @@ footer {
         .btn-bolt-app:hover {
         transform: scale(140%);
         }
+        p {
+        padding-left: 20px;
+        }
 }
 
 
@@ -372,6 +376,7 @@ footer {
 }
 @media screen and (max-width: 999px){
     footer {
+        height: 150px;
         text-align: center;
         padding: 10px;
         padding-bottom: 20px;
