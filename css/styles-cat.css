@@ -353,25 +353,27 @@ footer {
         .socials img {
         width: 32px;
         }
-        .socials img:hover {
+       .socials img:hover {
         transform: scale(140%);
+        transition: all 0.4s;
         }
         .btn-bolt-app {
-        margin-top: 10px;
-        background-color: #f1ee25;
-        color: #2563eb;
-        font-weight: 800;
-        padding: 10px;
-        height: 40px;
-        border-color: darkblue;
-        border-radius: 5px;
-        border-top: 20px;
-        border-bottom: 20px;
-        text-decoration: underline;
-        letter-spacing: 0.1em;
+            margin-top: 10px;
+            background-color: white;
+            color: #2563eb;
+            font-weight: 800;
+            padding: 10px;
+            height: 40px;
+            border-color: darkblue;
+            border-radius: 5px;
+            border-top: 20px;
+            border-bottom: 20px;
+            text-decoration: underline;
+            letter-spacing: 0.1em;
         }
         .btn-bolt-app:hover {
-        transform: scale(140%);
+            transform: scale(120%);
+            transition: all 0.4s;
         }
         p {
         padding-left: 20px;
