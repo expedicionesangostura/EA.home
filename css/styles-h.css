@@ -384,3 +384,7 @@ footer {
         padding-bottom: 20px;
     }
 }
+body {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}

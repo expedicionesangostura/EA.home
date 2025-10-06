@@ -31,3 +31,10 @@ document.addEventListener("touchend", (e) => {
   touchendX = e.changedTouches[0].screenX;
   handleGesture();
 });
+
+function navigateTo(url) {
+  document.body.classList.add("fade-out");
+  setTimeout(() => {
+    window.location.href = url;
+  }, 300); // match your CSS animation duration
+}
